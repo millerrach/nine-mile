@@ -15,7 +15,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-size: cover;
+  background-size: contain;
   color: white;
   padding: 2em;
   text-align: center;
@@ -24,6 +24,7 @@ body {
 .titleIndex {
   height: 100vh;
   background-image: url("../img/mountain_fog.jpg");
+  background-size: cover;
 }
 
 .titleRachel {
@@ -133,11 +134,13 @@ body {
 /////////WORK WITH US/////////
 
 .workWithUs {
-  color: $darkgray;
+  background-image: url("../img/forest-snow.jpg");
+  background-size: contain;
+  color: white;
   text-align: center;
   padding: 2em 0;
-  border-top: 1px solid $lightgray;
-  border-bottom: 1px solid $lightgray;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
   h1 {
     font-weight: $bold;
     font-size: 2em;
@@ -146,8 +149,14 @@ body {
 }
 
 .btn-secondary-outline {
-  color: $darkgray;
-  border-color: $darkgray;
+  color: white;
+  border-color: white;
+}
+
+.btn-secondary-outline:hover {
+  color: black;
+  background-color: white;
+  border-color: white;
 }
 
 /////////WORKING ON/////////
@@ -166,7 +175,6 @@ body {
   padding: 0 1em 2em 1em;
   font-weight: $normal;
 }
-
 
 .workingOnPic {
   img {
@@ -194,5 +202,55 @@ body {
   }
   form {
 
+  }
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: $darkgray;
+  border-color: $darkgray;
+}
+
+@media(min-width: 700px) {
+  .picFormContainer {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 2em;
+    img {
+      width: 47.5%;
+      height: 47.5%;
+      margin-right: 2.5%;
+    }
+    .contactMe {
+      width: 47.5%;
+      margin-left: 2.5%;
+      h4 {
+        font-weight: $bold;
+        margin-top: 0;
+      }
+      form {
+
+      }
+    }
+  }
+}
+
+.socialContainer {
+  display: flex;
+  justify-content: space-around;
+  padding: 1em 0;
+  margin-top: 2em;
+  border-top: 1px solid $darkgray;
+  font-weight: $bold;
+  background-color: black;
+  a {
+    color: white;
   }
 }
