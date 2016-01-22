@@ -1,0 +1,198 @@
+$light: 300;
+$normal: 400;
+$bold: 900;
+
+$lightgray: #717C7D;
+$darkgray: #3F4444;
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/////////TITLE FOR ALL THREE PAGES/////////
+
+.titleIntroContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  color: white;
+  padding: 2em;
+  text-align: center;
+}
+
+.titleIndex {
+  height: 100vh;
+  background-image: url("../img/mountain_fog.jpg");
+}
+
+.titleRachel {
+  background-image: url("../img/green.jpg");
+  padding: 5em 1em;
+}
+
+.titleTony {
+  background-image: url("../img/stars.jpg");
+  padding: 5em 1em;
+}
+
+.title,
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-weight: $bold;
+  font-size: 5em;
+  margin-top: 0;
+}
+
+.intro {
+  font-size: 1em;
+  line-height: 140%;
+}
+
+@media(min-width: 500px) {
+  .intro {
+    font-size: 1.6em;
+    line-height: 160%;
+  }
+}
+
+/////////TONY AND RACHEL/////////
+
+.whoTitle {
+  font-weight: bold;
+  font-size: 2.5em;
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+@media(max-width: 500px) {
+  .desktopVersionUs {
+    display: none;
+  }
+  .moreRachel,
+  .moreTony {
+    font-weight: $bold;
+    font-size: 1.5em;
+    margin: 1.5em 0;
+    text-align: center;
+    img {
+      width: 100%;
+      padding-bottom: 1em;
+    }
+    button {
+      background: black;
+      color: white;
+      border: 0;
+      padding: .5em 1em;
+      font-size: .5em;
+      font-weight: $normal;
+    }
+  }
+}
+
+@media(min-width: 500px) {
+  .mobileVersionUs {
+    display: none;
+  }
+  .moreUsContainer {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 0 2.5em 0;
+    .moreRachel,
+    .moreTony {
+      font-weight: $bold;
+      font-size: 1.5em;
+      margin: 1.5em 0;
+      button {
+        background: black;
+        color: white;
+        border: 0;
+        padding: 1em 1.5em;
+        font-size: .5em;
+        font-weight: $normal;
+      }
+    }
+  }
+}
+
+.toneRachPicsContainer {
+  display: flex;
+  justify-content: space-around;
+  img {
+    width: 40%;
+    height: 40%;
+  }
+}
+
+/////////WORK WITH US/////////
+
+.workWithUs {
+  color: $darkgray;
+  text-align: center;
+  padding: 2em 0;
+  border-top: 1px solid $lightgray;
+  border-bottom: 1px solid $lightgray;
+  h1 {
+    font-weight: $bold;
+    font-size: 2em;
+    margin: 0 0 .75em 0;
+  }
+}
+
+.btn-secondary-outline {
+  color: $darkgray;
+  border-color: $darkgray;
+}
+
+/////////WORKING ON/////////
+
+.workingOnTitle,
+.workingOnDescription {
+  display: flex;
+  justify-content: center;
+  padding: 2em 1em 1em 1em;
+  margin: 0;
+  font-weight: $bold;
+  text-align: center;
+}
+
+.workingOnDescription {
+  padding: 0 1em 2em 1em;
+  font-weight: $normal;
+}
+
+
+.workingOnPic {
+  img {
+    width: 95%;
+    border: 1px solid black;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/////////Rachel and Tony's Pages/////////
+
+.picFormContainer {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 2em;
+  img {
+    width: 100%;
+  }
+  h4 {
+    font-weight: $bold;
+    margin-top: 2em;
+  }
+  form {
+
+  }
+}
