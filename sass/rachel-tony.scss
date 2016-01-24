@@ -1,0 +1,75 @@
+$light: 300;
+$normal: 400;
+$bold: 900;
+
+$lightgray: #717C7D;
+$darkgray: #3F4444;
+
+/////////Rachel and Tony's Pages/////////
+
+.picFormContainer {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 2em;
+  img {
+    width: 100%;
+  }
+  h4 {
+    font-weight: $bold;
+    margin-top: 2em;
+  }
+  form {
+
+  }
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: $darkgray;
+  border-color: $darkgray;
+}
+
+@media(min-width: 700px) {
+  .picFormContainer {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 2em;
+    img {
+      width: 47.5%;
+      height: 47.5%;
+      margin-right: 2.5%;
+    }
+    .contactMe {
+      width: 47.5%;
+      margin-left: 2.5%;
+      h4 {
+        font-weight: $bold;
+        margin-top: 0;
+      }
+      form {
+
+      }
+    }
+  }
+}
+
+.socialContainer {
+  display: flex;
+  justify-content: space-around;
+  padding: 1em 0;
+  margin-top: 2em;
+  border-top: 1px solid $darkgray;
+  font-weight: $bold;
+  background-color: black;
+  a {
+    color: white;
+  }
+}

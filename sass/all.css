@@ -1,0 +1,192 @@
+body {
+  font-family: 'Lato', sans-serif; }
+
+.titleIntroContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+  color: white;
+  padding: 2em;
+  text-align: center; }
+
+.titleIndex {
+  height: 100vh;
+  background-image: url("../img/mountain_fog.jpg");
+  background-size: cover; }
+
+.titleRachel {
+  background-image: url("../img/green.jpg");
+  padding: 5em 1em; }
+
+.titleTony {
+  background-image: url("../img/stars.jpg");
+  padding: 5em 1em; }
+
+.title,
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.title {
+  font-weight: 900;
+  font-size: 5em;
+  margin-top: 0; }
+
+.intro {
+  font-size: 1em;
+  line-height: 140%; }
+
+@media (min-width: 500px) {
+  .intro {
+    font-size: 1.6em;
+    line-height: 160%; } }
+.whoTitle {
+  font-weight: bold;
+  font-size: 2.5em;
+  text-align: center;
+  margin: 1.5em 0; }
+
+@media (max-width: 500px) {
+  .desktopVersionUs {
+    display: none; }
+
+  .moreRachel,
+  .moreTony {
+    font-weight: 900;
+    font-size: 1.5em;
+    margin: 1.5em 0;
+    text-align: center; }
+    .moreRachel img,
+    .moreTony img {
+      width: 100%;
+      padding-bottom: 1em; }
+    .moreRachel button,
+    .moreTony button {
+      background: black;
+      color: white;
+      border: 0;
+      padding: .5em 1em;
+      font-size: .5em;
+      font-weight: 400; } }
+@media (min-width: 500px) {
+  .mobileVersionUs {
+    display: none; }
+
+  .moreUsContainer {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 0 2.5em 0; }
+    .moreUsContainer .moreRachel,
+    .moreUsContainer .moreTony {
+      font-weight: 900;
+      font-size: 1.5em;
+      margin: 1.5em 0; }
+      .moreUsContainer .moreRachel button,
+      .moreUsContainer .moreTony button {
+        background: black;
+        color: white;
+        border: 0;
+        padding: 1em 1.5em;
+        font-size: .5em;
+        font-weight: 400; } }
+.toneRachPicsContainer {
+  display: flex;
+  justify-content: space-around; }
+  .toneRachPicsContainer img {
+    width: 40%;
+    height: 40%; }
+
+.workWithUs {
+  background-image: url("../img/forest-snow.jpg");
+  background-size: contain;
+  color: white;
+  text-align: center;
+  padding: 2em 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white; }
+  .workWithUs h1 {
+    font-weight: 900;
+    font-size: 2em;
+    margin: 0 0 .75em 0; }
+
+.btn-secondary-outline {
+  color: white;
+  border-color: white; }
+
+.btn-secondary-outline:hover {
+  color: black;
+  background-color: white;
+  border-color: white; }
+
+.workingOnTitle,
+.workingOnDescription {
+  display: flex;
+  justify-content: center;
+  padding: 2em 1em 1em 1em;
+  margin: 0;
+  font-weight: 900;
+  text-align: center; }
+
+.workingOnDescription {
+  padding: 0 1em 2em 1em;
+  font-weight: 400; }
+
+.workingOnPic img {
+  width: 95%;
+  border: 1px solid black;
+  margin: 2%;
+  display: flex;
+  justify-content: center; }
+
+.picFormContainer {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 2em; }
+  .picFormContainer img {
+    width: 100%; }
+  .picFormContainer h4 {
+    font-weight: 900;
+    margin-top: 2em; }
+
+.btn-primary {
+  color: #fff;
+  background-color: black;
+  border-color: black; }
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #3F4444;
+  border-color: #3F4444; }
+
+@media (min-width: 700px) {
+  .picFormContainer {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 2em; }
+    .picFormContainer img {
+      width: 47.5%;
+      height: 47.5%;
+      margin-right: 2.5%; }
+    .picFormContainer .contactMe {
+      width: 47.5%;
+      margin-left: 2.5%; }
+      .picFormContainer .contactMe h4 {
+        font-weight: 900;
+        margin-top: 0; } }
+.socialContainer {
+  display: flex;
+  justify-content: space-around;
+  padding: 1em 0;
+  margin-top: 2em;
+  border-top: 1px solid #3F4444;
+  font-weight: 900;
+  background-color: black; }
+  .socialContainer a {
+    color: white; }
+
+/*# sourceMappingURL=all.css.map */
