@@ -5,7 +5,6 @@ $bold: 900;
 $lightgray: #717C7D;
 $darkgray: #3F4444;
 
-
 /////////TONY AND RACHEL/////////
 
 .whoTitle {
@@ -45,8 +44,12 @@ $darkgray: #3F4444;
     display: none;
   }
   .moreUsContainer {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     text-align: center;
     margin: 0 0 2.5em 0;
     .moreRachel,
@@ -67,8 +70,12 @@ $darkgray: #3F4444;
 }
 
 .toneRachPicsContainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   img {
     width: 40%;
     height: 40%;
@@ -79,10 +86,10 @@ $darkgray: #3F4444;
 
 .workWithUs {
   background-image: url("../img/forest-snow.jpg");
-  background-size: contain;
+  background-size: cover;
   color: white;
   text-align: center;
-  padding: 2em 0;
+  padding: 4em 0;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   h1 {
@@ -90,6 +97,15 @@ $darkgray: #3F4444;
     font-size: 2em;
     margin: 0 0 .75em 0;
   }
+}
+
+@media(min-width: 500) {
+  .workWithUs {
+    background-size: contain;
+  }
+}
+
+.workWithUs {
 }
 
 .btn-secondary-outline {
@@ -105,28 +121,56 @@ $darkgray: #3F4444;
 
 /////////WORKING ON/////////
 
-.workingOnTitle,
-.workingOnDescription {
-  display: flex;
-  justify-content: center;
-  padding: 2em 1em 1em 1em;
-  margin: 0;
+.workingOnTitle {
   font-weight: $bold;
-  text-align: center;
 }
 
 .workingOnDescription {
-  padding: 0 1em 2em 1em;
   font-weight: $normal;
 }
 
 .workingOnPic {
   img {
-    width: 95%;
     border: 1px solid black;
-    margin: 2%;
+  }
+}
+
+@media(max-width: 500px) {
+  .workingOnTitle,
+  .workingOnDescription {
+    padding: 1.5em 16px 0 16px;
+    margin-bottom: 0;
+  }
+  .workingOnPic {
+    border: 1px solid black;
+    margin: 2em 1em;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media(min-width: 500px) {
+  .workingOn {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 4em 1em;
+  }
+  .workingOnTitleDescription {
+    width: 45%;
+  }
+  .workingOnPic {
+    width: 45%;
+    img {
+      width: 100%;
+    }
   }
 }
 

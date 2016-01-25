@@ -38,6 +38,8 @@ $darkgray: #3F4444;
 
 @media(min-width: 700px) {
   .picFormContainer {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     width: 90%;
     margin: 0 auto;
@@ -62,8 +64,12 @@ $darkgray: #3F4444;
 }
 
 .socialContainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   padding: 1em 0;
   margin-top: 2em;
   border-top: 1px solid $darkgray;

@@ -2,8 +2,14 @@ body {
   font-family: 'Lato', sans-serif; }
 
 .titleIntroContainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   background-size: contain;
   color: white;
@@ -25,8 +31,14 @@ body {
 
 .title,
 .intro {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center; }
 
 .title {
@@ -75,7 +87,11 @@ body {
     display: none; }
 
   .moreUsContainer {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     text-align: center;
     margin: 0 0 2.5em 0; }
@@ -93,7 +109,11 @@ body {
         font-size: .5em;
         font-weight: 400; } }
 .toneRachPicsContainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
   justify-content: space-around; }
   .toneRachPicsContainer img {
     width: 40%;
@@ -101,10 +121,10 @@ body {
 
 .workWithUs {
   background-image: url("../img/forest-snow.jpg");
-  background-size: contain;
+  background-size: cover;
   color: white;
   text-align: center;
-  padding: 2em 0;
+  padding: 4em 0;
   border-top: 1px solid white;
   border-bottom: 1px solid white; }
   .workWithUs h1 {
@@ -112,6 +132,9 @@ body {
     font-size: 2em;
     margin: 0 0 .75em 0; }
 
+@media (min-width: 500) {
+  .workWithUs {
+    background-size: contain; } }
 .btn-secondary-outline {
   color: white;
   border-color: white; }
@@ -121,26 +144,46 @@ body {
   background-color: white;
   border-color: white; }
 
-.workingOnTitle,
-.workingOnDescription {
-  display: flex;
-  justify-content: center;
-  padding: 2em 1em 1em 1em;
-  margin: 0;
-  font-weight: 900;
-  text-align: center; }
+.workingOnTitle {
+  font-weight: 900; }
 
 .workingOnDescription {
-  padding: 0 1em 2em 1em;
   font-weight: 400; }
 
 .workingOnPic img {
-  width: 95%;
-  border: 1px solid black;
-  margin: 2%;
-  display: flex;
-  justify-content: center; }
+  border: 1px solid black; }
 
+@media (max-width: 500px) {
+  .workingOnTitle,
+  .workingOnDescription {
+    padding: 1.5em 16px 0 16px;
+    margin-bottom: 0; }
+
+  .workingOnPic {
+    border: 1px solid black;
+    margin: 2em 1em; }
+    .workingOnPic img {
+      width: 100%; } }
+@media (min-width: 500px) {
+  .workingOn {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 4em 1em; }
+
+  .workingOnTitleDescription {
+    width: 45%; }
+
+  .workingOnPic {
+    width: 45%; }
+    .workingOnPic img {
+      width: 100%; } }
 .picFormContainer {
   display: block;
   width: 90%;
@@ -164,6 +207,8 @@ body {
 
 @media (min-width: 700px) {
   .picFormContainer {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     width: 90%;
     margin: 0 auto;
@@ -179,7 +224,11 @@ body {
         font-weight: 900;
         margin-top: 0; } }
 .socialContainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   padding: 1em 0;
   margin-top: 2em;
