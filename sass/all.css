@@ -132,7 +132,7 @@ button:focus {
       margin: 1.5em 0; }
       .moreUsContainer .moreRachel button,
       .moreUsContainer .moreTony button {
-        background: black;
+        background: #25282B;
         color: white;
         border: 0;
         padding: 1em 1.5em;
@@ -149,7 +149,7 @@ button:focus {
     height: 40%; }
 
 .workWithUs {
-  background-color: #A8AA31;
+  background-color: #25282B;
   color: white;
   text-align: center;
   padding: 2em 0;
