@@ -5,7 +5,27 @@ $bold: 900;
 $lightgray: #717C7D;
 $darkgray: #3F4444;
 
-.contactNavItem a {
-  color: $darkgray;
+.contactNav {
+  .mobileNav a,
+  .desktopNav a {
+    color: $darkgray;
+  }
+}
+
+.titleContact {
+  margin-top: 3em;
+  text-align: center;
+}
+
+.contactUs {
+  .btn-primary {
+    //color: #fff;
+    background-color: $darkgray;
+    border-color: $darkgray;
+  }
+  .btn-primary:hover {
+    background-color: $lightgray;
+    border-color: $lightgray;
+  }
 }
 

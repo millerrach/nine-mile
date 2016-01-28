@@ -5,7 +5,16 @@ $bold: 900;
 $lightgray: #717C7D;
 $darkgray: #3F4444;
 
-/////////TONY AND RACHEL/////////
+
+/////////Title/////////
+
+.introImgIndex {
+  height: 100vh;
+  background-image: url("../img/mountain_fog.jpg");
+  background-size: cover;
+}
+
+/////////Who we are and more info/////////
 
 .whoTitle {
   font-weight: bold;
@@ -39,6 +48,10 @@ $darkgray: #3F4444;
   }
 }
 
+button:focus {
+  outline: none;
+}
+
 @media(min-width: 500px) {
   .mobileVersionUs {
     display: none;
@@ -48,7 +61,6 @@ $darkgray: #3F4444;
     display: -ms-flexbox;
     display: flex;
     -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
             justify-content: space-around;
     text-align: center;
     margin: 0 0 2.5em 0;
@@ -74,7 +86,6 @@ $darkgray: #3F4444;
   display: -ms-flexbox;
   display: flex;
   -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
           justify-content: space-around;
   img {
     width: 40%;
@@ -82,24 +93,25 @@ $darkgray: #3F4444;
   }
 }
 
-/////////WORK WITH US/////////
+/////////Work With Us/////////
 
 .workWithUs {
-  background-image: url("../img/forest-snow.jpg");
-  background-size: cover;
+  background-color: #A8AA31;
+  //background-image: url("../img/water.jpg");
+  //background-size: cover;
   color: white;
   text-align: center;
-  padding: 4em 0;
+  padding: 2em 0;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   h1 {
     font-weight: $bold;
     font-size: 2em;
-    margin: 0 0 .75em 0;
+    margin: 0 .5em .75em .5em;
   }
 }
 
-@media(min-width: 500) {
+@media(min-width: 500px) {
   .workWithUs {
     background-size: contain;
   }
@@ -119,7 +131,7 @@ $darkgray: #3F4444;
   border-color: white;
 }
 
-/////////WORKING ON/////////
+/////////Currently Working On/////////
 
 .workingOnTitle {
   font-weight: $bold;
@@ -156,7 +168,6 @@ $darkgray: #3F4444;
     display: -ms-flexbox;
     display: flex;
     -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
             justify-content: space-around;
     -webkit-align-items: center;
         -ms-flex-align: center;

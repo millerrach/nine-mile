@@ -5,7 +5,28 @@ $bold: 900;
 $lightgray: #717C7D;
 $darkgray: #3F4444;
 
-/////////Rachel and Tony's Pages/////////
+/////////Nav and Title/////////
+
+.nav a {
+  font-weight: $normal;
+}
+
+.introImgRachel {
+  background-image: url("../img/green.jpg");
+}
+
+.introImgTony {
+  background-image: url("../img/stars.jpg");
+}
+
+.titleIntroRachel,
+.titleIntroTony {
+  height: 60vh;
+}
+
+//TODO: Make height vh smaller on mobile?
+
+/////////Picture and Form Container/////////
 
 .picFormContainer {
   display: block;
@@ -63,13 +84,14 @@ $darkgray: #3F4444;
   }
 }
 
+/////////Social Footer/////////
+
 .socialContainer {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  justify-content: space-around;
   padding: 1em 0;
   margin-top: 2em;
   border-top: 1px solid $darkgray;

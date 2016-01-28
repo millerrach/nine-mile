@@ -9,56 +9,84 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-/////////TITLE FOR ALL THREE PAGES/////////
+/////////Intro Background Image/////////
 
-.titleIntroContainer {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+.introBackgroundImg {
   background-size: contain;
   color: white;
-  padding: 2em;
   text-align: center;
 }
 
-.titleIndex {
-  height: 100vh;
-  background-image: url("../img/mountain_fog.jpg");
-  background-size: cover;
+/////////Navigation for all pages/////////
+
+.mobileNav {
+  a {
+    color: white;
+  }
 }
 
-.titleRachel {
-  background-image: url("../img/green.jpg");
-  padding: 5em 1em;
+.hamburger {
+  text-align: right;
 }
 
-.titleTony {
-  background-image: url("../img/stars.jpg");
-  padding: 5em 1em;
+.bg-faded {
+  background-color: transparent;
 }
 
-.title,
-.intro {
+.bg-inverse {
+  background-color: transparent;
+}
+
+@media(max-width: 500px) {
+  .desktopNav {
+    display: none;
+  }
+}
+
+@media(min-width: 500px) {
+  .mobileNav {
+    display: none;
+  }
+  .navbar {
+    border: 1px solid orange;
+    display: none;
+  }
+  .desktopNav {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 1em 1em 0 0;
+    a {
+      margin: 1em;
+      padding: .5em;
+      color: white;
+      font-weight: $bold;
+    }
+  }
+}
+
+/////////Title for all pages/////////
+
+.titleIntro {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  height: 85vh;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 1em;
 }
 
 .title {
   font-weight: $bold;
-  font-size: 5em;
+  font-size: 3em;
   margin-top: 0;
 }
 
@@ -67,7 +95,21 @@ body {
   line-height: 140%;
 }
 
+//TODO: Media Query to center nav in smaller view
+
 @media(min-width: 500px) {
+  .title {
+    font-size: 4em;
+  }
+  .intro {
+    font-size: 1.25em;
+  }
+}
+
+@media(min-width: 700px) {
+  .title {
+    font-size: 5em;
+  }
   .intro {
     font-size: 1.6em;
     line-height: 160%;
@@ -77,3 +119,4 @@ body {
 //Sass Import
 @import 'index';
 @import 'rachel-tony';
+@import 'contact';

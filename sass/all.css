@@ -1,49 +1,63 @@
 body {
   font-family: 'Lato', sans-serif; }
 
-.titleIntroContainer {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+.introBackgroundImg {
   background-size: contain;
   color: white;
-  padding: 2em;
   text-align: center; }
 
-.titleIndex {
-  height: 100vh;
-  background-image: url("../img/mountain_fog.jpg");
-  background-size: cover; }
+.mobileNav a {
+  color: white; }
 
-.titleRachel {
-  background-image: url("../img/green.jpg");
-  padding: 5em 1em; }
+.hamburger {
+  text-align: right; }
 
-.titleTony {
-  background-image: url("../img/stars.jpg");
-  padding: 5em 1em; }
+.bg-faded {
+  background-color: transparent; }
 
-.title,
-.intro {
+.bg-inverse {
+  background-color: transparent; }
+
+@media (max-width: 500px) {
+  .desktopNav {
+    display: none; } }
+@media (min-width: 500px) {
+  .mobileNav {
+    display: none; }
+
+  .navbar {
+    border: 1px solid orange;
+    display: none; }
+
+  .desktopNav {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 1em 1em 0 0; }
+    .desktopNav a {
+      margin: 1em;
+      padding: .5em;
+      color: white;
+      font-weight: 900; } }
+.titleIntro {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  height: 85vh;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  padding: 0 1em; }
 
 .title {
   font-weight: 900;
-  font-size: 5em;
+  font-size: 3em;
   margin-top: 0; }
 
 .intro {
@@ -51,9 +65,23 @@ body {
   line-height: 140%; }
 
 @media (min-width: 500px) {
+  .title {
+    font-size: 4em; }
+
+  .intro {
+    font-size: 1.25em; } }
+@media (min-width: 700px) {
+  .title {
+    font-size: 5em; }
+
   .intro {
     font-size: 1.6em;
     line-height: 160%; } }
+.introImgIndex {
+  height: 100vh;
+  background-image: url("../img/mountain_fog.jpg");
+  background-size: cover; }
+
 .whoTitle {
   font-weight: bold;
   font-size: 2.5em;
@@ -82,6 +110,9 @@ body {
       padding: .5em 1em;
       font-size: .5em;
       font-weight: 400; } }
+button:focus {
+  outline: none; }
+
 @media (min-width: 500px) {
   .mobileVersionUs {
     display: none; }
@@ -91,7 +122,6 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
     text-align: center;
     margin: 0 0 2.5em 0; }
@@ -113,26 +143,24 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
   justify-content: space-around; }
   .toneRachPicsContainer img {
     width: 40%;
     height: 40%; }
 
 .workWithUs {
-  background-image: url("../img/forest-snow.jpg");
-  background-size: cover;
+  background-color: #A8AA31;
   color: white;
   text-align: center;
-  padding: 4em 0;
+  padding: 2em 0;
   border-top: 1px solid white;
   border-bottom: 1px solid white; }
   .workWithUs h1 {
     font-weight: 900;
     font-size: 2em;
-    margin: 0 0 .75em 0; }
+    margin: 0 .5em .75em .5em; }
 
-@media (min-width: 500) {
+@media (min-width: 500px) {
   .workWithUs {
     background-size: contain; } }
 .btn-secondary-outline {
@@ -170,7 +198,6 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
     -webkit-align-items: center;
     -ms-flex-align: center;
@@ -184,6 +211,19 @@ body {
     width: 45%; }
     .workingOnPic img {
       width: 100%; } }
+.nav a {
+  font-weight: 400; }
+
+.introImgRachel {
+  background-image: url("../img/green.jpg"); }
+
+.introImgTony {
+  background-image: url("../img/stars.jpg"); }
+
+.titleIntroRachel,
+.titleIntroTony {
+  height: 60vh; }
+
 .picFormContainer {
   display: block;
   width: 90%;
@@ -228,7 +268,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
   padding: 1em 0;
   margin-top: 2em;
@@ -237,5 +276,20 @@ body {
   background-color: black; }
   .socialContainer a {
     color: white; }
+
+.contactNav .mobileNav a,
+.contactNav .desktopNav a {
+  color: #3F4444; }
+
+.titleContact {
+  margin-top: 3em;
+  text-align: center; }
+
+.contactUs .btn-primary {
+  background-color: #3F4444;
+  border-color: #3F4444; }
+.contactUs .btn-primary:hover {
+  background-color: #717C7D;
+  border-color: #717C7D; }
 
 /*# sourceMappingURL=all.css.map */
