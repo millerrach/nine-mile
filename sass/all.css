@@ -7,7 +7,7 @@ body {
   text-align: center; }
 
 .mobileNav a {
-  color: white; }
+  color: #3F4444; }
 
 .hamburger {
   text-align: right; }
@@ -16,7 +16,7 @@ body {
   background-color: transparent; }
 
 .bg-inverse {
-  background-color: transparent; }
+  background-color: white; }
 
 @media (max-width: 500px) {
   .desktopNav {
