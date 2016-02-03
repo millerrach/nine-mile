@@ -7,6 +7,10 @@ $(function () {
             var from = $('#from').val();
             var text = $('#text').val();
 
+            $(".btn-primary").text("Sent");
+
+            $(".submitted").removeClass('hide');
+
             var data = {
                 name: name,
                 from: from,
@@ -30,3 +34,6 @@ $(function () {
         });
     });
 });
+
+
+

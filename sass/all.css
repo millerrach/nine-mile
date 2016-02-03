@@ -77,6 +77,12 @@ body {
   .intro {
     font-size: 1.6em;
     line-height: 160%; } }
+.submitted {
+  padding-top: 2em; }
+
+.hide {
+  display: none; }
+
 .introImgIndex {
   height: 100vh;
   background-image: url("../img/mountain_fog.jpg");

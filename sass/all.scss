@@ -114,7 +114,18 @@ body {
   }
 }
 
+/////////All pages minus index/////////
+
+.submitted {
+  padding-top: 2em;
+}
+
+.hide {
+  display: none;
+}
+
 //Sass Import
 @import 'index';
 @import 'rachel-tony';
 @import 'contact';
+
