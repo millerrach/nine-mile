@@ -5,21 +5,29 @@ $bold: 900;
 $lightgray: #717C7D;
 $darkgray: #3F4444;
 
-.contactNav {
-  .mobileNav a,
-  .desktopNav a {
-    color: $darkgray;
-  }
+/////////Navigation/////////
+
+.bg-inverseContact {
+  background-color: $darkgray;
+  color: white;
 }
 
-.titleContact {
-  margin-top: 3em;
+.mobileNavContact a {
+  color: white;
+}
+
+/////////Title/////////
+
+.title {
+  font-size: 2em;
+  margin: .5em 0 .5em 0;
   text-align: center;
 }
 
-.contactUs {
+/////////Contact Form/////////
+
+#contactUs {
   .btn-primary {
-    //color: #fff;
     background-color: $darkgray;
     border-color: $darkgray;
   }
@@ -28,4 +36,13 @@ $darkgray: #3F4444;
     border-color: $lightgray;
   }
 }
+
+form {
+  margin-top: 2em;
+}
+
+
+
+
+
 

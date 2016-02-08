@@ -8,19 +8,17 @@
     <link rel="stylesheet" href="sass/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="sass/tether.min.css">
-    <link rel="stylesheet" href="sass/all.css">
+    <link rel="stylesheet" href="sass/main.css">
 </head>
 <body>
 
-<div class="contactNav">
-    <div class="container mobileNav">
-        <div class="row">
-            <div class="collapse" id="exCollapsingNavbar">
-                <div class="bg-inverse p-a-1">
-                    <div class="home"><a href="index.html">HOME</a></div>
-                    <div class="rachel"><a href="rachel.html">RACHEL</a></div>
-                    <div class="tony"><a href="tony.html">TONY</a></div>
-                </div>
+<div class="container-fluid mobileNavContact">
+    <div class="row">
+        <div class="collapse" id="exCollapsingNavbar">
+            <div class="bg-inverseContact p-a-1">
+                <div class="home"><a href="index.html">HOME</a></div>
+                <div class="rachel"><a href="rachel.html">RACHEL</a></div>
+                <div class="tony"><a href="tony.html">TONY</a></div>
             </div>
         </div>
     </div>
@@ -32,21 +30,12 @@
             </button>
         </nav>
     </div>
-
-    <div class="desktopNav">
-        <div class="home"><a href="index.html">HOME</a></div>
-        <div class="rachel"><a href="rachel.html">RACHEL</a></div>
-        <div class="tony"><a href="tony.html">TONY</a></div>
-    </div>
 </div>
 
-<div class="titleContact">
-    <h1 class="title">CONTACT NINE MILE</h1>
-</div>
-
-<div class="contactUs">
-    <div class="container">
+<div class="container" id="contactUs">
+    <div class="col-md-12">
         <div class="row">
+            <h1 class="title">CONTACT NINE MILE</h1>
             <form method="post">
                 <fieldset class="form-group">
                     <label for="name">Name</label>
@@ -62,7 +51,7 @@
                 </fieldset>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
-            <div class="submitted hide">YOUR FORM HAS BEEN SUBMITTED, THANK YOU.</div>
+            <div class="submitted hide">Your form has been submitted, thank you!</div>
         </div>
     </div>
 </div>

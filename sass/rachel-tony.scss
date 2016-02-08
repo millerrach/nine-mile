@@ -5,11 +5,13 @@ $bold: 900;
 $lightgray: #717C7D;
 $darkgray: #3F4444;
 
-/////////Nav and Title/////////
+/////////Nav/////////
 
 .nav a {
   font-weight: $normal;
 }
+
+/////////Title/////////
 
 .introImgRachel {
   background-image: url("../img/green.jpg");
@@ -55,33 +57,6 @@ $darkgray: #3F4444;
   border-color: $darkgray;
 }
 
-@media(min-width: 700px) {
-  .picFormContainer {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 2em;
-    img {
-      width: 47.5%;
-      height: 47.5%;
-      margin-right: 2.5%;
-    }
-    .contactMe {
-      width: 47.5%;
-      margin-left: 2.5%;
-      h4 {
-        font-weight: $bold;
-        margin-top: 0;
-      }
-      form {
-
-      }
-    }
-  }
-}
-
 /////////Social Footer/////////
 
 .socialContainer {
@@ -90,12 +65,27 @@ $darkgray: #3F4444;
   display: flex;
   -webkit-justify-content: space-around;
   justify-content: space-around;
-  padding: 1em 0;
+  padding: .75em 0;
   margin-top: 2em;
   border-top: 1px solid $darkgray;
+  font-size: .75em;
   font-weight: $bold;
   background-color: black;
   a {
     color: white;
   }
 }
+
+@media(min-width: 700px) {
+  .socialContainer {
+    margin: 0;
+  }
+}
+
+@media(min-width: 500px) {
+  .socialContainer {
+    //padding: 1em 0;
+    font-size: 1em;
+  }
+}
+

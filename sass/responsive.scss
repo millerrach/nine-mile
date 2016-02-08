@@ -1,0 +1,193 @@
+/////////Index///////////////////////////////////////////////////////
+
+/////////More about Tony and Rachel/////////
+
+@media(max-width: 500px) {
+  .desktopVersionUs {
+    display: none;
+  }
+  .moreRachel,
+  .moreTony {
+    font-weight: $bold;
+    font-size: 1.5em;
+    margin: 1.5em 0;
+    text-align: center;
+    img {
+      width: 100%;
+      padding-bottom: 1em;
+    }
+    button {
+      background: black;
+      color: white;
+      border: 0;
+      padding: .5em 1em;
+      font-size: .5em;
+      font-weight: $normal;
+    }
+  }
+}
+
+@media(min-width: 500px) {
+  .mobileVersionUs {
+    display: none;
+  }
+  .moreUsContainer {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 0 2.5em 0;
+    .moreRachel,
+    .moreTony {
+      font-weight: $bold;
+      font-size: 1.5em;
+      margin: 1.5em 0;
+      button {
+        background: $almostBlack;
+        color: white;
+        border: 0;
+        padding: 1em 1.5em;
+        font-size: .5em;
+        font-weight: $normal;
+      }
+    }
+  }
+}
+
+/////////Work With Us/////////
+
+@media(min-width: 500px) {
+  .workWithUs {
+    background-size: contain;
+  }
+}
+
+/////////Working On/////////
+
+@media(max-width: 500px) {
+  .workingOnTitle,
+  .workingOnDescription {
+    padding: 1.5em 16px 0 16px;
+    margin-bottom: 0;
+  }
+  .workingOnPic {
+    border: 1px solid black;
+    margin: 2em 1em;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media(min-width: 500px) {
+  .workingOn {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 4em 1em;
+  }
+  .workingOnTitleDescription {
+    width: 45%;
+  }
+  .workingOnPic {
+    width: 45%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+/////////Contact Page///////////////////////////////////////////////////////
+
+@media(min-width: 500px) {
+  .navbar-toggler {
+    font-size: 2rem;
+  }
+}
+
+/////////Rachel and Tony Page///////////////////////////////////////////////////////
+
+@media(min-width: 700px) {
+  .picFormContainer {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    padding: 4em 0;
+    img {
+      width: 47.5%;
+      height: 47.5%;
+      margin-right: 2.5%;
+    }
+    .contactMe {
+      width: 47.5%;
+      margin-left: 2.5%;
+      h4 {
+        font-weight: $bold;
+        margin-top: 0;
+      }
+      form {
+
+      }
+    }
+  }
+}
+
+/////////All Pages///////////////////////////////////////////////////////
+
+@media(max-width: 500px) {
+  .desktopNav {
+    display: none;
+  }
+}
+
+@media(min-width: 500px) {
+  .mobileNav {
+    display: none;
+  }
+  .mobileNavbar {
+    display: none;
+  }
+  .desktopNav {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 1em 1em 0 0;
+    a {
+      margin: 1em;
+      padding: .5em;
+      color: white;
+      font-weight: $bold;
+    }
+  }
+}
+
+@media(min-width: 500px) {
+  .title {
+    font-size: 4em;
+  }
+  .intro {
+    font-size: 1.25em;
+  }
+}
+
+@media(min-width: 700px) {
+  .title {
+    font-size: 5em;
+  }
+  .intro {
+    font-size: 1.6em;
+    line-height: 160%;
+  }
+}

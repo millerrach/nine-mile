@@ -24,62 +24,8 @@ $almostBlack: #25282B;
   margin: 1.5em 0;
 }
 
-@media(max-width: 500px) {
-  .desktopVersionUs {
-    display: none;
-  }
-  .moreRachel,
-  .moreTony {
-    font-weight: $bold;
-    font-size: 1.5em;
-    margin: 1.5em 0;
-    text-align: center;
-    img {
-      width: 100%;
-      padding-bottom: 1em;
-    }
-    button {
-      background: black;
-      color: white;
-      border: 0;
-      padding: .5em 1em;
-      font-size: .5em;
-      font-weight: $normal;
-    }
-  }
-}
-
 button:focus {
   outline: none;
-}
-
-@media(min-width: 500px) {
-  .mobileVersionUs {
-    display: none;
-  }
-  .moreUsContainer {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-around;
-            justify-content: space-around;
-    text-align: center;
-    margin: 0 0 2.5em 0;
-    .moreRachel,
-    .moreTony {
-      font-weight: $bold;
-      font-size: 1.5em;
-      margin: 1.5em 0;
-      button {
-        background: $almostBlack;
-        color: white;
-        border: 0;
-        padding: 1em 1.5em;
-        font-size: .5em;
-        font-weight: $normal;
-      }
-    }
-  }
 }
 
 .toneRachPicsContainer {
@@ -107,12 +53,6 @@ button:focus {
     font-weight: $bold;
     font-size: 2em;
     margin: 0 .5em .75em .5em;
-  }
-}
-
-@media(min-width: 500px) {
-  .workWithUs {
-    background-size: contain;
   }
 }
 
@@ -146,41 +86,4 @@ button:focus {
   }
 }
 
-@media(max-width: 500px) {
-  .workingOnTitle,
-  .workingOnDescription {
-    padding: 1.5em 16px 0 16px;
-    margin-bottom: 0;
-  }
-  .workingOnPic {
-    border: 1px solid black;
-    margin: 2em 1em;
-    img {
-      width: 100%;
-    }
-  }
-}
-
-@media(min-width: 500px) {
-  .workingOn {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-around;
-            justify-content: space-around;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 4em 1em;
-  }
-  .workingOnTitleDescription {
-    width: 45%;
-  }
-  .workingOnPic {
-    width: 45%;
-    img {
-      width: 100%;
-    }
-  }
-}
 

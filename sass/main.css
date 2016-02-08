@@ -18,30 +18,6 @@ body {
 .bg-inverse {
   background-color: white; }
 
-@media (max-width: 500px) {
-  .desktopNav {
-    display: none; } }
-@media (min-width: 500px) {
-  .mobileNav {
-    display: none; }
-
-  .navbar {
-    border: 1px solid orange;
-    display: none; }
-
-  .desktopNav {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    padding: 1em 1em 0 0; }
-    .desktopNav a {
-      margin: 1em;
-      padding: .5em;
-      color: white;
-      font-weight: 900; } }
 .titleIntro {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -64,19 +40,6 @@ body {
   font-size: 1em;
   line-height: 140%; }
 
-@media (min-width: 500px) {
-  .title {
-    font-size: 4em; }
-
-  .intro {
-    font-size: 1.25em; } }
-@media (min-width: 700px) {
-  .title {
-    font-size: 5em; }
-
-  .intro {
-    font-size: 1.6em;
-    line-height: 160%; } }
 .submitted {
   padding-top: 2em; }
 
@@ -94,56 +57,9 @@ body {
   text-align: center;
   margin: 1.5em 0; }
 
-@media (max-width: 500px) {
-  .desktopVersionUs {
-    display: none; }
-
-  .moreRachel,
-  .moreTony {
-    font-weight: 900;
-    font-size: 1.5em;
-    margin: 1.5em 0;
-    text-align: center; }
-    .moreRachel img,
-    .moreTony img {
-      width: 100%;
-      padding-bottom: 1em; }
-    .moreRachel button,
-    .moreTony button {
-      background: black;
-      color: white;
-      border: 0;
-      padding: .5em 1em;
-      font-size: .5em;
-      font-weight: 400; } }
 button:focus {
   outline: none; }
 
-@media (min-width: 500px) {
-  .mobileVersionUs {
-    display: none; }
-
-  .moreUsContainer {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-around;
-    justify-content: space-around;
-    text-align: center;
-    margin: 0 0 2.5em 0; }
-    .moreUsContainer .moreRachel,
-    .moreUsContainer .moreTony {
-      font-weight: 900;
-      font-size: 1.5em;
-      margin: 1.5em 0; }
-      .moreUsContainer .moreRachel button,
-      .moreUsContainer .moreTony button {
-        background: #25282B;
-        color: white;
-        border: 0;
-        padding: 1em 1.5em;
-        font-size: .5em;
-        font-weight: 400; } }
 .toneRachPicsContainer {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -166,9 +82,6 @@ button:focus {
     font-size: 2em;
     margin: 0 .5em .75em .5em; }
 
-@media (min-width: 500px) {
-  .workWithUs {
-    background-size: contain; } }
 .btn-secondary-outline {
   color: white;
   border-color: white; }
@@ -187,36 +100,6 @@ button:focus {
 .workingOnPic img {
   border: 1px solid black; }
 
-@media (max-width: 500px) {
-  .workingOnTitle,
-  .workingOnDescription {
-    padding: 1.5em 16px 0 16px;
-    margin-bottom: 0; }
-
-  .workingOnPic {
-    border: 1px solid black;
-    margin: 2em 1em; }
-    .workingOnPic img {
-      width: 100%; } }
-@media (min-width: 500px) {
-  .workingOn {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-around;
-    justify-content: space-around;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin: 4em 1em; }
-
-  .workingOnTitleDescription {
-    width: 45%; }
-
-  .workingOnPic {
-    width: 45%; }
-    .workingOnPic img {
-      width: 100%; } }
 .nav a {
   font-weight: 400; }
 
@@ -251,6 +134,132 @@ button:focus {
   background-color: #3F4444;
   border-color: #3F4444; }
 
+.socialContainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  padding: .75em 0;
+  margin-top: 2em;
+  border-top: 1px solid #3F4444;
+  font-size: .75em;
+  font-weight: 900;
+  background-color: black; }
+  .socialContainer a {
+    color: white; }
+
+@media (min-width: 700px) {
+  .socialContainer {
+    margin: 0; } }
+@media (min-width: 500px) {
+  .socialContainer {
+    font-size: 1em; } }
+.bg-inverseContact {
+  background-color: #3F4444;
+  color: white; }
+
+.mobileNavContact a {
+  color: white; }
+
+.title {
+  font-size: 2em;
+  margin: .5em 0 .5em 0;
+  text-align: center; }
+
+#contactUs .btn-primary {
+  background-color: #3F4444;
+  border-color: #3F4444; }
+#contactUs .btn-primary:hover {
+  background-color: #717C7D;
+  border-color: #717C7D; }
+
+form {
+  margin-top: 2em; }
+
+@media (max-width: 500px) {
+  .desktopVersionUs {
+    display: none; }
+
+  .moreRachel,
+  .moreTony {
+    font-weight: 900;
+    font-size: 1.5em;
+    margin: 1.5em 0;
+    text-align: center; }
+    .moreRachel img,
+    .moreTony img {
+      width: 100%;
+      padding-bottom: 1em; }
+    .moreRachel button,
+    .moreTony button {
+      background: black;
+      color: white;
+      border: 0;
+      padding: .5em 1em;
+      font-size: .5em;
+      font-weight: 400; } }
+@media (min-width: 500px) {
+  .mobileVersionUs {
+    display: none; }
+
+  .moreUsContainer {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 0 2.5em 0; }
+    .moreUsContainer .moreRachel,
+    .moreUsContainer .moreTony {
+      font-weight: 900;
+      font-size: 1.5em;
+      margin: 1.5em 0; }
+      .moreUsContainer .moreRachel button,
+      .moreUsContainer .moreTony button {
+        background: #25282B;
+        color: white;
+        border: 0;
+        padding: 1em 1.5em;
+        font-size: .5em;
+        font-weight: 400; } }
+@media (min-width: 500px) {
+  .workWithUs {
+    background-size: contain; } }
+@media (max-width: 500px) {
+  .workingOnTitle,
+  .workingOnDescription {
+    padding: 1.5em 16px 0 16px;
+    margin-bottom: 0; }
+
+  .workingOnPic {
+    border: 1px solid black;
+    margin: 2em 1em; }
+    .workingOnPic img {
+      width: 100%; } }
+@media (min-width: 500px) {
+  .workingOn {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 4em 1em; }
+
+  .workingOnTitleDescription {
+    width: 45%; }
+
+  .workingOnPic {
+    width: 45%; }
+    .workingOnPic img {
+      width: 100%; } }
+@media (min-width: 500px) {
+  .navbar-toggler {
+    font-size: 2rem; } }
 @media (min-width: 700px) {
   .picFormContainer {
     display: -webkit-flex;
@@ -258,7 +267,7 @@ button:focus {
     display: flex;
     width: 90%;
     margin: 0 auto;
-    padding-top: 2em; }
+    padding: 4em 0; }
     .picFormContainer img {
       width: 47.5%;
       height: 47.5%;
@@ -269,33 +278,41 @@ button:focus {
       .picFormContainer .contactMe h4 {
         font-weight: 900;
         margin-top: 0; } }
-.socialContainer {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
-  padding: 1em 0;
-  margin-top: 2em;
-  border-top: 1px solid #3F4444;
-  font-weight: 900;
-  background-color: black; }
-  .socialContainer a {
-    color: white; }
+@media (max-width: 500px) {
+  .desktopNav {
+    display: none; } }
+@media (min-width: 500px) {
+  .mobileNav {
+    display: none; }
 
-.contactNav .mobileNav a,
-.contactNav .desktopNav a {
-  color: #3F4444; }
+  .mobileNavbar {
+    display: none; }
 
-.titleContact {
-  margin-top: 3em;
-  text-align: center; }
+  .desktopNav {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 1em 1em 0 0; }
+    .desktopNav a {
+      margin: 1em;
+      padding: .5em;
+      color: white;
+      font-weight: 900; } }
+@media (min-width: 500px) {
+  .title {
+    font-size: 4em; }
 
-.contactUs .btn-primary {
-  background-color: #3F4444;
-  border-color: #3F4444; }
-.contactUs .btn-primary:hover {
-  background-color: #717C7D;
-  border-color: #717C7D; }
+  .intro {
+    font-size: 1.25em; } }
+@media (min-width: 700px) {
+  .title {
+    font-size: 5em; }
 
-/*# sourceMappingURL=all.css.map */
+  .intro {
+    font-size: 1.6em;
+    line-height: 160%; } }
+
+/*# sourceMappingURL=main.css.map */

@@ -17,7 +17,7 @@ body {
   text-align: center;
 }
 
-/////////Navigation for all pages/////////
+/////////Navigation/////////
 
 .mobileNav {
   a {
@@ -35,37 +35,6 @@ body {
 
 .bg-inverse {
   background-color: white;
-}
-
-@media(max-width: 500px) {
-  .desktopNav {
-    display: none;
-  }
-}
-
-@media(min-width: 500px) {
-  .mobileNav {
-    display: none;
-  }
-  .navbar {
-    border: 1px solid orange;
-    display: none;
-  }
-  .desktopNav {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    padding: 1em 1em 0 0;
-    a {
-      margin: 1em;
-      padding: .5em;
-      color: white;
-      font-weight: $bold;
-    }
-  }
 }
 
 /////////Title for all pages/////////
@@ -95,25 +64,6 @@ body {
   line-height: 140%;
 }
 
-@media(min-width: 500px) {
-  .title {
-    font-size: 4em;
-  }
-  .intro {
-    font-size: 1.25em;
-  }
-}
-
-@media(min-width: 700px) {
-  .title {
-    font-size: 5em;
-  }
-  .intro {
-    font-size: 1.6em;
-    line-height: 160%;
-  }
-}
-
 /////////All pages minus index/////////
 
 .submitted {
@@ -128,4 +78,5 @@ body {
 @import 'index';
 @import 'rachel-tony';
 @import 'contact';
+@import 'responsive';
 
