@@ -72,15 +72,16 @@ button:focus {
 
 /////////Currently Working On/////////
 
-.workingOnTitle {
+.sharedTitle {
   font-weight: $bold;
+  //margin-bottom: 1.5em;
 }
 
-.workingOnDescription {
+.sharedDescription {
   font-weight: $normal;
 }
 
-.workingOnPic {
+.jubeckPic {
   img {
     border: 1px solid black;
   }
