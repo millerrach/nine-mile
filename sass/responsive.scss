@@ -1,10 +1,4 @@
-$light: 300;
-$normal: 400;
-$bold: 900;
-
-$lightgray: #717C7D;
-$darkgray: #3F4444;
-$almostBlack: #25282B;
+/////////Index///////////////////////////////////////////////////////
 
 /////////More about Tony and Rachel/////////
 
@@ -73,13 +67,12 @@ $almostBlack: #25282B;
 /////////Working On/////////
 
 @media(max-width: 500px) {
-  .sharedTitle,
-  .sharedDescription {
-    // padding: 1.5em 16px 0 16px;
-    // border: 1px solid red;
-    color: blue;
+  .workingOnTitle,
+  .workingOnDescription {
+    padding: 1.5em 16px 0 16px;
+    margin-bottom: 0;
   }
-  .jubeckPic {
+  .workingOnPic {
     border: 1px solid black;
     margin: 2em 1em;
     img {
@@ -87,12 +80,9 @@ $almostBlack: #25282B;
     }
   }
 }
-h4 {
-  margin-bottom: 0;
-}
 
 @media(min-width: 500px) {
-  .sharedProjects {
+  .workingOn {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -103,10 +93,10 @@ h4 {
     align-items: center;
     margin: 4em 1em;
   }
-  .sharedTitleDescription {
+  .workingOnTitleDescription {
     width: 45%;
   }
-  .jubeckPic {
+  .workingOnPic {
     width: 45%;
     img {
       width: 100%;

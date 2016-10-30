@@ -91,13 +91,13 @@ button:focus {
   background-color: white;
   border-color: white; }
 
-.sharedTitle {
+.workingOnTitle {
   font-weight: 900; }
 
-.sharedDescription {
+.workingOnDescription {
   font-weight: 400; }
 
-.jubeckPic img {
+.workingOnPic img {
   border: 1px solid black; }
 
 .nav a {
@@ -142,10 +142,12 @@ button:focus {
   justify-content: space-around;
   padding: .75em 0;
   margin-top: 2em;
+  border-top: 1px solid #3F4444;
   font-size: .75em;
-  font-weight: 900; }
+  font-weight: 900;
+  background-color: black; }
   .socialContainer a {
-    color: #3F4444; }
+    color: white; }
 
 @media (min-width: 700px) {
   .socialContainer {
@@ -226,20 +228,18 @@ form {
   .workWithUs {
     background-size: contain; } }
 @media (max-width: 500px) {
-  .sharedTitle,
-  .sharedDescription {
-    color: blue; }
+  .workingOnTitle,
+  .workingOnDescription {
+    padding: 1.5em 16px 0 16px;
+    margin-bottom: 0; }
 
-  .jubeckPic {
+  .workingOnPic {
     border: 1px solid black;
     margin: 2em 1em; }
-    .jubeckPic img {
+    .workingOnPic img {
       width: 100%; } }
-h4 {
-  margin-bottom: 0; }
-
 @media (min-width: 500px) {
-  .sharedProjects {
+  .workingOn {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -250,12 +250,12 @@ h4 {
     align-items: center;
     margin: 4em 1em; }
 
-  .sharedTitleDescription {
+  .workingOnTitleDescription {
     width: 45%; }
 
-  .jubeckPic {
+  .workingOnPic {
     width: 45%; }
-    .jubeckPic img {
+    .workingOnPic img {
       width: 100%; } }
 @media (min-width: 500px) {
   .navbar-toggler {
